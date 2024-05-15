@@ -1,21 +1,28 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "./redux/features/products/productsSlice";
-import Products from "./components/Products";
-import Loading from "./components/Loading";
+import React from "react";
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import FAQ from './components/Accordion/FAQ';
+import Footer from './components/Footer/Footer';
+import Team from "./components/Team/Team";
+import LoginSignup from "./components/LoginSignup/LoginSignup";
 
 function App() {
 
-  const dispatch = useDispatch();
-  const loading = useSelector(state => state.productsReducer.loading);
-
-  useEffect(() => {
-    dispatch(getProducts());
-  }, [dispatch])
 
   return (
     <div>
-      {loading ? <Loading /> : <Products />}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<><LoginSignup /></>} />
+          <Route path='/abc' element={<><FAQ /><Team /><Footer /></>} />
+
+        </Routes>
+      </BrowserRouter>
+      {/* <LoginSignup/> */}
+
+      {/* <FAQ />
+      <Team />
+      <Footer /> */}
     </div>
   );
 }
