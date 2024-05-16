@@ -1,5 +1,5 @@
 
-const Data=[
+export const QuestionsData=[
     {
         id:1,
         question:"What are the services we provide?",
@@ -26,5 +26,4 @@ const Data=[
         answer:"Registration fee wont be returned."
     },
     
-]
-export default Data;
+];

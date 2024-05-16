@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import './Accordion.css'
-function Accordion( {data} ) {
-    const [text, setText] = useState(false)
+import React, { useState } from 'react';
+import './Accordion.css';
+function Accordion({ data }) {
+    const [text, setText] = useState(false);
 
 
     const handleClick = () => {
@@ -12,7 +12,7 @@ function Accordion( {data} ) {
         <div>
             <ul className='faq-list'>
                 <li>
-                    <div className="question"><span onClick={()=>{handleClick()}}>{text?<i className="fa-sharp fa-solid fa-angle-up "></i>:<i className="fa-sharp fa-solid fa-angle-down "></i>}</span> {data.question} </div>
+                    <div className="question"><span onClick={() => { handleClick() }}>{text ? <i className="fa-sharp fa-solid fa-angle-up "></i> : <i className="fa-sharp fa-solid fa-angle-down "></i>}</span> {data.question} </div>
                     <div className='ans-list'>
                         {text && <p>{data.answer}
                         </p>}
@@ -23,4 +23,4 @@ function Accordion( {data} ) {
     )
 }
 
-export default Accordion
+export default Accordion;
