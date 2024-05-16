@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import './Accordion.css';
 function Accordion({ data }) {
     const [text, setText] = useState(false);
-
-
     const handleClick = () => {
         setText(!text);
     }
