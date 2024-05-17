@@ -1,21 +1,23 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "./redux/features/products/productsSlice";
-import Products from "./components/Products";
-import Loading from "./components/Loading";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+//import Header from './components/Header';
+import Header from './components/Header';
 
 function App() {
-
-  const dispatch = useDispatch();
-  const loading = useSelector(state => state.productsReducer.loading);
-
-  useEffect(() => {
-    dispatch(getProducts());
-  }, [dispatch])
-
   return (
-    <div>
-      {loading ? <Loading /> : <Products />}
+    <div className="App">
+      {/* <Header /> */}
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/" element={<Navigation />} /> */}
+          <Route path="/*" element={<Header />} />
+          {/* <Route path="/add" element={<><Navbar /><Empdeatil /></>} />;
+        <Route path="/view/:id" element={<> <Navbar /> <View /> </>} />;
+        <Route path="/*" element={<Nopage />} /> */}
+
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }
