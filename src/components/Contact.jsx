@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Contact.css'
 import ValidateForm from './ValidateForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 const Contact = () => {
     const [userdata, setUserdata] = useState({
         name:'',
