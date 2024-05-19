@@ -14,7 +14,6 @@ body {
 }
 
 .services::after {
-  content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
@@ -100,7 +99,7 @@ a:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 15px;
   position: relative;
-  display: inline-block; /* Display images side-by-side */
+  display: inline-block;
   width: 90%; 
   margin: 5px; 
 }
@@ -113,7 +112,6 @@ a:hover {
 
 .img-fluid:hover{
   transform: scale(1.2);
-  /* transition: transform 0.5s ease-in-out; */
   transition: ease-in 0.4s;
   cursor: pointer;
 }
@@ -124,21 +122,20 @@ a:hover {
   left: 0;
   width: 100%; 
   height: 20%; 
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.5); 
   color: #fff;
   display: flex;
   justify-content: start;
   align-items: center;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-  /* Text styling (optional): */
   font-size: 16px;
   font-weight: bold;
 }
 
 
 .imageCard:hover .image-overlay {
-  opacity: 1; /* Overlay visible on hover */
+  opacity: 1; 
 }
 
 .image-overlay p {
