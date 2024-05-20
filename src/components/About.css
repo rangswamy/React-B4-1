@@ -7,14 +7,7 @@
     margin-left: 53px;
 }
 
-.about::after {
-    content: "";
-    width: 120px;
-    height: 2px;
-    display: inline-block;
-    background: #fd9042;
-    margin: 4px;
-  }
+
   
   .about {
     color: rgb(154, 152, 152);
