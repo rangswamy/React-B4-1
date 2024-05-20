@@ -1,10 +1,10 @@
-const ValidateForm = (values) => {
+export const ValidateForm = (values) => {
   const errors = {};
   if (!values.name) {
     errors.name = 'Name is required';
   }
   if (!values.email) {
-    errors.email = 'email is required';
+    errors.email = 'email is required'
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
     errors.email = "Email address is invalid";
   }
@@ -16,4 +16,3 @@ const ValidateForm = (values) => {
   }
   return errors;
 }
-export default ValidateForm
