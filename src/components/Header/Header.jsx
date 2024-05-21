@@ -5,14 +5,14 @@ import './Header.css';
 
 const Header = () => {
     const navigate = useNavigate();
-    const HandleClick = () => {
+    const handleClick = () => {
         navigate("/*");
     };
     return (
         <>
             <div className="Header">
                 <div className="icon">
-                    <img className='main-icon' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9eTUujuome-L3ZboYU47V7ZJRhSHhW7YivbRvouHFw&s' alt='' onClick={() => HandleClick()} ></img>
+                    <img className='main-icon' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9eTUujuome-L3ZboYU47V7ZJRhSHhW7YivbRvouHFw&s' alt='' onClick={() => handleClick()} ></img>
                 </div>
                 <div className="container">
 
@@ -66,44 +66,7 @@ const Header = () => {
 
                         </div>
                     </div>
-                </nav><br /><br />
-
-
-
-                {/* <section>
-                    <div>
-                        <h2 class="animate_animated animate_fadeInDown">
-                            "Welcome to
-                            <span>Selecao</span>
-                        </h2>
-                        <p class="animate_animated fanimate_adeInUp">
-                            "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut alic
-                            ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore
-                        </p>
-                        <a href="#about" class="btn-get-started animate_animated animate_fadeInUp scrollto">Read More</a>
-
-                    </div>
-
-                </section> */}
-
-                {/* ▼ <section id="hero" class="d-flex flex-column justify-content-end align-items-center"> flex
-                    ▼<div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="ca>
-<!-- Slide 1 -->
-<div class="carousel-item active"> == $0
-                    ▼<div class="carousel-container"> flex
-                        ▼<h2 class="animate_animated animate_fadeInDown">
-                            "Welcome to
-                            <span>Selecao</span>
-                        </h2>
-                        ▼<p class="animate_animated fanimate_adeInUp">
-                            "Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut alic
-                            ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore
-                        </p>
-                        <a href="#about" class="btn-get-started animate_animated animate_fadeInUp scrollto">Read More</a>
-                    </div>
-            </div></section >
-
-*/}
+                </nav>
             </div >
 
         </>
