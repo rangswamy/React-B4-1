@@ -1,4 +1,4 @@
-export const cardData = [
+export const ServiceCardData = [
   {
     title: "Lorem Ipsum",
     iconPath:
@@ -51,7 +51,7 @@ export const cardData = [
 
 
 
-export const imagesData = [
+export const portfolioImagesData = [
   {
     imageLink:
       "https://bootstrapmade.com/demo/templates/Selecao/assets/img/portfolio/portfolio-2.jpg",
