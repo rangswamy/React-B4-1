@@ -4,7 +4,10 @@ import FAQ from './components/Accordion/FAQ';
 import Footer from './components/Footer/Footer';
 import Team from "./components/Team/Team";
 import LoginSignup from "./components/LoginSignup/LoginSignup";
+import About from "./components/About/About";
+import Cards from "./components/Card/Cards";
 import './App.css';
+
 
 
 function App() {
@@ -12,6 +15,10 @@ function App() {
 
   return (
     <div>
+
+      <About />
+      <Cards />
+
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<><LoginSignup /></>} />
@@ -20,7 +27,6 @@ function App() {
         </Routes>
       </BrowserRouter>
 
-     
     </div>
   );
 }

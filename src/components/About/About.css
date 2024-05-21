@@ -1,57 +1,45 @@
 .container {
     margin: 60px;
-      
 }
-.container-text{
+
+.container-text {
     text-align: start;
     margin-left: 53px;
 }
 
-.about::after {
-    content: "";
-    width: 120px;
-    height: 2px;
-    display: inline-block;
-    background: #fd9042;
-    margin: 4px;
-  }
-  
-  .about {
+.about {
     color: rgb(154, 152, 152);
     letter-spacing: 2px;
     font-family: sans-serif;
-   
-  }
+}
 
-  .about-text{
+.about-text {
     text-align: center;
-  }
-  
-h1{
+}
+
+h1 {
     font-family: sans-serif;
     font-size: 32px;
-   
 }
 
-h2{
+h2 {
     font-family: sans-serif;
-  color: black;
-  font-size: 37px;
+    color: black;
+    font-size: 37px;
 }
 
-p{
+p {
     color: rgb(154, 152, 152);
     letter-spacing: 2px;
     font-family: sans-serif;
- 
-  
 }
+
 .body-about {
     display: flex;
     align-items: center;
     gap: 50px;
     justify-content: space-between;
-      margin-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .body-image {
@@ -63,7 +51,6 @@ p{
 
 .body-text {
     margin-top: 22px;
-
 }
 
 .btn {
@@ -77,10 +64,10 @@ p{
     width: 200px;
     letter-spacing: 2px;
     font-weight: bold
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #e09305;
     color: white;
     font-weight: bold;
-  }
+}
