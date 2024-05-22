@@ -11,8 +11,6 @@ import Cards from "./components/Card/Cards";
 
 
 function App() {
-
-
   return (
     <div>
 
