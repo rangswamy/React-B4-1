@@ -9,26 +9,16 @@ import Cards from "./components/Card/Cards";
 // import './App.css';
 
 
-
 function App() {
-
-
   return (
     <div>
-
-      <About/>
-      <Cards/>
-
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<><LoginSignup /></>} />
           <Route path='/team' element={<><FAQ /><Team /><Footer /></>} />
-
         </Routes>
-      </BrowserRouter> */}
-
+      </BrowserRouter>
     </div>
   );
 }
-
 export default App;
