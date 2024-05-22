@@ -11,7 +11,7 @@ const Cards = () => {
             </div>
             <div className="team-one">
                 <div className="profile-one">
-                    <img className='mem-image' src='https://www.amigosbusinesscorp.com/img/bharat.jpg' alt='bharat '></img>
+                    <img className='team-image' src='https://www.amigosbusinesscorp.com/img/bharat.jpg' alt='bharat '></img>
                     <h3>Bharat kumar T</h3>
                     <p>Administrator</p>
                     <div className='team-social'>
@@ -20,9 +20,8 @@ const Cards = () => {
                     </div>
                 </div>
 
-
                 <div className="profile-one">
-                    <img className='mem-image' src='https://www.amigosbusinesscorp.com/img/swamy.jpg' alt=' '></img>
+                    <img className='team-image' src='https://www.amigosbusinesscorp.com/img/swamy.jpg' alt=' '></img>
                     <h3>Swamy R</h3>
                     <p>Co-ordinator</p>
                     <div className='team-social'>
@@ -32,7 +31,7 @@ const Cards = () => {
                 </div>
 
                 <div className="profile-one">
-                    <img className='mem-image' src='https://www.amigosbusinesscorp.com/img/praveen.jpg' alt=' '></img>
+                    <img className='team-image' src='https://www.amigosbusinesscorp.com/img/praveen.jpg' alt=' '></img>
                     <h3>Praveen K</h3>
                     <p>Trainer</p>
                     <div className='team-social'>
@@ -42,7 +41,7 @@ const Cards = () => {
                 </div>
 
                 <div className="profile-one">
-                    <img className='mem-image' src='https://www.amigosbusinesscorp.com/img/adi.jpg' alt=' '></img>
+                    <img className='team-image' src='https://www.amigosbusinesscorp.com/img/adi.jpg' alt=' '></img>
                     <h3>Adikarthik Gupta</h3>
                     <p>Trainer</p>
                     <div className='team-social'>
@@ -55,7 +54,7 @@ const Cards = () => {
             <div className="team-two">
 
                 <div className="profile-one">
-                    <img className='mem-image' src='https://www.amigosbusinesscorp.com/img/harish.jpg' alt=' '></img>
+                    <img className='team-image' src='https://www.amigosbusinesscorp.com/img/harish.jpg' alt=' '></img>
                     <h3>Harish</h3>
                     <p>Trainer</p>
                     <div className='team-social'>
@@ -65,7 +64,7 @@ const Cards = () => {
                 </div>
 
                 <div className="profile-one">
-                    <img className='mem-image' src='https://www.amigosbusinesscorp.com/img/shashi.jpg' alt=' '></img>
+                    <img className='team-image' src='https://www.amigosbusinesscorp.com/img/shashi.jpg' alt=' '></img>
                     <h3>Shashikala</h3>
                     <p>Trainer</p>
                     <div className='team-social'>
