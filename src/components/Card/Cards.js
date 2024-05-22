@@ -2,7 +2,6 @@ import React from 'react'
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import './Cards.css';
 
-
 const Cards = () => {
     return (
         <div>
