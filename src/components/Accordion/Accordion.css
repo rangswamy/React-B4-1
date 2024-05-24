@@ -1,122 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-.faq {
-  /* padding: 60px 0; */
-  margin-left: 30px;
-}
-
-.faq h2 {
-  font-weight: 300;
-  padding-left: 20px;
-  color: grey;
-  font-size: 16px;
-  margin: 0;
-
-}
-
-i.active {
-  color: #bd5102;
-}
-
-.faq .faq-list {
+.faq-list {
+  margin-bottom: 16px;
   padding: 0;
+}
+
+.faq-list li {
   list-style: none;
 }
 
-.faq .faq-list li {
+.question {
+  display: flex;
+}
+
+.faq .faq-list .accordion {
   border-bottom: 1px solid #ececf1;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-.faq .question {
-  display: block;
-  position: relative;
-  font-family: 'Open Sans', poppins;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 25px;
+.accordion {
   cursor: pointer;
-  transition: 0.3s;
-  color: #444444;
 }
 
-.faq .question:hover {
-  color: #bd5102;
-  ;
-
-}
-
-.faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-
-
-.faq p {
-  margin-bottom: 0;
-  padding: 20px;
-  font-weight: 600;
-}
-
-.faq-list .ans-list p {
-  margin-left: 20px;
-  font-weight: 500;
-  font-size: 17px;
-  font-family: 'Open Sans', sans-serif
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list .collapsed {
-  color: black;
-}
-
-.faq .faq-list .collapsed:hover {
-  color: #ef6603;
-}
-
-.faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-
-/* .question p{
-    font-family:;
-  } */
-
-.hr-lines:after {
-  content: " ";
-  height: 2px;
-  width: 100px;
-  background: red;
+.collapsible-title {
   display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transition: 0.3s;
-}
-
-.hr-lines {
   position: relative;
-  max-width: 160px;
-  left: 0;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 10px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
 }
 
-
-
-.faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
+.collapsible-title:hover {
+  color: #fd9042;
 }
 
-.section-title p {
-  font-size: 36px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
+.collapsible-text {
+  max-height: 0;
+  overflow: hidden;
+  padding: 10px 0 0 25px;
+  transition: max-height .5s linear;
+}
+
+.collapsible-text.show {
+  height: auto;
+  max-height: 100px;
 }
