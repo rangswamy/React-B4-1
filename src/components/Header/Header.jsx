@@ -1,19 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-
-import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
-    const navigate = useNavigate();
-    const handleClick = () => {
-        navigate("/*");
-    };
     return (
         <>
             <div className="Header">
                 <div className="icon">
-                    <img className='main-icon' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9eTUujuome-L3ZboYU47V7ZJRhSHhW7YivbRvouHFw&s' alt='' onClick={() => handleClick()} ></img>
+                    <img className='main-icon' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9eTUujuome-L3ZboYU47V7ZJRhSHhW7YivbRvouHFw&s' alt=''  ></img>
                 </div>
                 <div className="container">
 
@@ -41,26 +34,26 @@ const Header = () => {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="orderedlist">
                                 <li class="nav-item">
-                                    <Link to={`/home`} class="nav-home" aria-current="page" href="2">Home</Link>
+                                    Home
                                 </li>
                                 <li class="nav-item">
-                                    <Link to={`/about`} class="nav-link" aria-current="page" href="2">About</Link>
+                                    About
                                 </li>
 
                                 <li class="nav-item">
-                                    <Link to={`/service`} class="nav-link" href="3">Services</Link>
+                                    Services
                                 </li>
                                 <li class="nav-item">
-                                    <Link to={`/portfolio`} class="nav-link" href="3">Portfolio</Link>
+                                    Portfolio
                                 </li>
                                 <li class="nav-item">
-                                    <Link to={`/pricing`} class="nav-link" href="3">Pricing</Link>
+                                    Pricing
                                 </li>
                                 <li class="nav-item">
-                                    <Link to={`/Team`} class="nav-link" href="4">Team</Link>
+                                    Team
                                 </li>
                                 <li class="nav-item">
-                                    <Link to={`/contact`} class="nav-link" href="5">Contact</Link>
+                                    Contact
                                 </li>
 
                             </ul>
