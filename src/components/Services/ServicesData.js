@@ -1,6 +1,6 @@
-import devops from '../../assets/devops.jpg';
-import java from '../../assets/java.jpg';
-import react from '../../assets/react.jpg';
+import devops from '../../Assets/devops.jpg';
+import java from '../../Assets/java.jpg';
+import react from '../../Assets/react.jpg';
 
 export const servicesData = [
     {
