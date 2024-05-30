@@ -27,7 +27,7 @@ const Contact = () => {
   useEffect(() => {
     if (Object.keys(formError).length === 0 && isSubmit) {
     }
-  }, [formError])
+  }, [formError, isSubmit]);
 
   return (
     <div>
