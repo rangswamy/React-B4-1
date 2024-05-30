@@ -1,0 +1,48 @@
+.faq-list {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.faq-list li {
+  list-style: none;
+}
+
+.question {
+  display: flex;
+}
+
+.faq .faq-list .accordion {
+  border-bottom: 1px solid #ececf1;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.collapsible-title {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 10px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+.collapsible-title:hover {
+  color: #fd9042;
+}
+
+.collapsible-text {
+  max-height: 0;
+  overflow: hidden;
+  padding: 10px 0 0 25px;
+  transition: max-height .5s linear;
+}
+
+.collapsible-text.show {
+  height: auto;
+  max-height: 100px;
+}
