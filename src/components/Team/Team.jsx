@@ -1,7 +1,7 @@
 import React from 'react';
 import { teamData } from './TeamData';
 import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { teamData } from './TeamData';
+import  TeamData  from './TeamData';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Team.css';
 
