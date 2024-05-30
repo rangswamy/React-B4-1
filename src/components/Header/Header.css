@@ -13,7 +13,14 @@
 
 li {
     list-style: none;
+    color: black;
 
+}
+
+.home {
+    border: none;
+    border-radius: 42px;
+    background-color: #ef6603;
 }
 
 .navbar.navbar-expand-lg bg-transparent {
@@ -48,11 +55,26 @@ li {
 
 a {
     margin-left: 30px;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
+.email-info:hover {
+    background-color: #ef6603;
+    border: none;
+    border-radius: 60px;
+    padding: 5px;
+
+}
+
 a:hover {
+    background-color: #ef6603;
+    border: none;
+    border-radius: 60px;
+    padding: 5px;
+}
+
+li:hover {
     background-color: #ef6603;
     border: none;
     border-radius: 60px;
@@ -103,6 +125,7 @@ svg {
 
 .navbar li {
     position: relative;
+    padding: 13px;
 }
 
 .navbar a,

@@ -32,11 +32,12 @@ const Header = () => {
                 <nav class="navbar navbar-expand-lg bg-transparent">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                             <ul class="orderedlist">
-                                <li class="nav-item">
+                                <li class="home" >
                                     Home
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" >
                                     About
                                 </li>
 
