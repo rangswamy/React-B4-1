@@ -1,8 +1,5 @@
-h2,
-h4 {
-  font-family: "Raleway", sans-serif;
-}
-section {
+
+.section {
   padding: 60px 0;
   overflow: hidden;
 }

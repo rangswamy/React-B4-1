@@ -1,70 +1,65 @@
-import React from 'react';
+import React, { useState } from 'react';
+import image from '../../Assets/logo.jpeg';
 import './Header.css';
 
 const Header = () => {
-    return (
-        <>
-            <div className="Header">
-                <div className="icon">
-                    <img className='main-icon' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9eTUujuome-L3ZboYU47V7ZJRhSHhW7YivbRvouHFw&s' alt=''  ></img>
-                </div>
-                <div className="container">
+    const [showMenu, setShowMenu] = useState(false);
 
-                    <div className='topbar'>
-                        <div className="phoneNumber">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                            </svg>
-                            <a href="tel:+91 7619221922" className='number'>+91 76192 21922</a>
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
+
+    return (
+        <div className={`header home ${showMenu ? 'show-menu' : ''}`}>
+            <div className="container-fluid">
+                <div className="header-top row align-items-center">
+                    <div className="col-lg-3">
+                        <div className="brand">
+                            <a href="index.html">
+                                <img src={image} alt="Logo" className="logo-img" />
+                            </a>
                         </div>
-                        <div>
-                            <div className="email-info">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-down" viewBox="0 0 16 16" color='oranged'>
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
-                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z" />
-                                </svg>
-                                <a href='mailto:admin@amigosbusinesscorp.com'>admin@amigosbusinesscorp.com</a>
+                    </div>
+                    <div className="col-lg-9">
+                        <div className="topbar">
+                            <div className="topbar-col">
+                                <a href="tel:+91 76192 21922">
+                                    <i className="fa fa-phone" aria-hidden="true"></i>+91 76192 21922
+                                </a>
+                            </div>
+                            <div className="topbar-col">
+                                <a href="mailto:admin@amigosbusinesscorp.com">
+                                    <i className="fa fa-envelope" aria-hidden="true"></i>admin@amigosbusinesscorp.com
+                                </a>
+                            </div>
+                        </div>
+                        <div className="navbar navbar-expand-lg bg-light navbar-light text-align-right">
+                            <a href="/#" className="navbar-brand">MENU</a>
+                            <button type="button" className="navbar-toggler" onClick={toggleMenu} aria-expanded={showMenu}>
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className={`collapse navbar-collapse ${showMenu ? 'show' : ''}`} id="navbarCollapse">
+                                <div className="navbar-nav ml-auto">
+                                    <a href="index.html" className="nav-item nav-link active">Home</a>
+                                    <a href="about.html" className="nav-item nav-link">About</a>
+                                    <a href="service.html" className="nav-item nav-link">Service</a>
+                                    <a href="story.html" className="nav-item nav-link">Story</a>
+                                    <a href="contact.html" className="nav-item nav-link">Contact</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <nav class="navbar navbar-expand-lg bg-transparent">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                            <ul class="orderedlist">
-                                <li class="home" >
-                                    Home
-                                </li>
-                                <li class="nav-item" >
-                                    About
-                                </li>
-
-                                <li class="nav-item">
-                                    Services
-                                </li>
-                                <li class="nav-item">
-                                    Portfolio
-                                </li>
-                                <li class="nav-item">
-                                    Pricing
-                                </li>
-                                <li class="nav-item">
-                                    Team
-                                </li>
-                                <li class="nav-item">
-                                    Contact
-                                </li>
-
-                            </ul>
-
-                        </div>
+                <div className="hero row align-items-center">
+                    <div className="col-md-7">
+                        <h2><span>Training</span></h2>
+                        <p>We provide Training and Placement</p>
+                        <a className="btn" href="service.html">Explore Now</a>
                     </div>
-                </nav>
-            </div >
+                </div>
+            </div>
+        </div>
+    );
+};
 
-        </>
-    )
-}
 export default Header;

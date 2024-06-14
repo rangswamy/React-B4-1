@@ -8,16 +8,6 @@
   }
   
   
-  .img-fluid{
-      width: 100%;
-      height: max-content;
-  }
-  
-  .img-fluid:hover{
-    transform: scale(1.2);
-    transition: ease-in 0.4s;
-    cursor: pointer;
-  }
   
   .image-overlay {
     position: absolute;

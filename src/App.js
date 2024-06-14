@@ -8,7 +8,7 @@ import FrequentlyAskedQuestions from "./components/FAQ/FrequentlyAskedQuestions"
 import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
-import Card from "./components/Card/Cards";
+// import Card from "./components/Card/Cards";
 import './App.css';
 
 function App() {
@@ -16,8 +16,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<><Header /> <Contact /><Portfolio /><Services /><FrequentlyAskedQuestions /><Team />
-            <About /><Card /><Footer /></>} />
+          <Route path='/' element={<><Header/><Contact/><Services/><Portfolio/><FrequentlyAskedQuestions/><About/><Team /><Footer /></>} />
         </Routes>
       </BrowserRouter>
     </div>
