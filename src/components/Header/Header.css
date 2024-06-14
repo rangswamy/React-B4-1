@@ -1,206 +1,362 @@
-.Header {
-    display: flex;
-    margin-bottom: 75px;
-    justify-content: space-between;
-}
-
-.container-fluid {
-    margin-top: 75px;
-    margin-left: 65px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-
-}
-
-li {
-    list-style: none;
-    color: black;
-
-}
-
-.home {
-    border: none;
-    border-radius: 42px;
-    background-color: #ef6603;
-}
-
-.navbar.navbar-expand-lg bg-transparent {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 15px 7px 15px;
-    margin-left: 5px;
-    font-size: 14px;
-    color: #fff;
-    white-space: nowrap;
-    transition: 0.3s;
-    border-radius: 50px;
-}
-
-.topbar {
-    display: flex;
-    color: white;
-    justify-content: space-evenly;
-    justify-items: end;
-    margin-top: -31px;
-    margin-right: -730px;
-}
-
-.orderedlist {
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    margin-top: 63px;
-    margin-right: 85px;
-}
-
-a {
-    margin-left: 30px;
-    color: black;
-    text-decoration: none;
-}
-
-.email-info:hover {
-    background-color: #ef6603;
-    border: none;
-    border-radius: 60px;
-    padding: 5px;
-
-}
-
-a:hover {
-    background-color: #ef6603;
-    border: none;
-    border-radius: 60px;
-    padding: 5px;
-}
-
-li:hover {
-    background-color: #ef6603;
-    border: none;
-    border-radius: 60px;
-    padding: 5px;
-}
-
-.number {
-    margin-right: 22px;
-}
-
-body {
-    font-family: font-awesome;
-    background-size: cover;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-
-}
-
-.main-icon {
-    width: 310px;
-    margin-left: 25px;
-    margin-top: 15px;
-}
-
-
-svg {
-    color: rgb(218, 125, 3);
-}
-
-.nav-home {
-    background-color: #ef6603;
-    border: none;
-    border-radius: 60px;
-    padding: 5px;
-}
-
-.navbar {
-    padding: 0;
-}
-
-.navbar ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.navbar li {
+.header {
     position: relative;
-    padding: 13px;
+    width: 100%;
+    padding: 15px 0 0 0;
+    background: #444444;
+    height:100vh;
 }
 
-.navbar a,
-.navbar a:focus {
+.header.home {
+    margin-bottom: 45px;
+    background: linear-gradient(rgb(35, 36, 36), rgba(66, 69, 70, 0.9), rgb(35, 36, 36)), url(../../Assets/celebration.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .header-top {
+    padding-bottom: 15px;
+    border-bottom: 0px solid rgba(255, 255, 255, .1);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 15px 7px 15px;
-    margin-left: 5px;
-    font-size: 14px;
-    color: #fff;
-    white-space: nowrap;
-    transition: 0.3s;
-    border-radius: 50px;
+    margin: 10px;
+    
 }
 
-.navbar a i,
-.navbar a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
+.navbar-nav .nav-item:first-child {
+    margin-left: 40rem; 
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.header .brand {
+    position: relative;
+    margin-right: 2rem; 
+}
+
+.header .brand a {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.header .brand img {
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+
+.header .topbar {
+    position: relative;
+    text-align: right;
+}
+
+.header .topbar .topbar-col {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.header .topbar-col a {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.header .topbar-col a i {
+    margin-right: 10px;
+    color: #ef6603;
+}
+
+.header .topbar-social {
+    position: relative;
+}
+
+.header .topbar-social a {
+    display: inline-block;
+}
+
+.header .topbar-social a i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.header .topbar-social a:last-child i {
+    margin: 0;
+}
+
+.header .topbar-social a:hover i {
+    color: #ef6603;
+}
+
+.header .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 5px;
+    background: #eeeeee;
+}
+
+.header .dropdown-menu a.active {
+    color: #ef6603;
+}
+@media (min-width: 992px) {
+    .header .row {
+        padding: 0 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header .navbar {
+        background: transparent !important;
+    }
+    
+    .header .navbar-brand {
+        display: none;
+    }
+    
+.header .navbar-light a.nav-link,
+.header .navbar-light .show > .nav-link {
+        position: relative;
+        padding: 8px 10px;
+        color: #ffffff;
+        font-size: 16px;
+        z-index: 1;
+}
+    
+.header .navbar-light a.nav-link:hover,
+.header .navbar-light a.nav-link.active {
+        color: #ef6603;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .brand {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .header .topbar .topbar-col {
+        margin: 0;
+    }
+    
+    .header .topbar .topbar-social {
+        margin-top: 5px;
+    }
+    
+    .header .navbar {
+        background: #ffffff !important;
+        border: none;
+        z-index: 1;
+    }
+    
+    .header a.nav-link {
+        padding: 5px 0;
+    }
+    
+    .header .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .navbar .navbar-nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .header .navbar .navbar-collapse {
+        background-color: #444444;
+        /* position: fixed; */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        overflow-y: auto;
+        transition: transform 0.3s ease;
+        transform: translateY(-100%);
+    }
+    
+    .header .navbar .navbar-collapse.show {
+        transform: translateY(0);
+    }
+    
+    .header .navbar .nav-item {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .header .navbar .nav-link {
+        font-size: 18px;
+        color: #ffffff;
+    }
+    
+    .header .navbar .nav-link:hover,
+    .header .navbar .nav-link:focus {
+        color: #ef6603;
+    }
+    
+    .header .navbar-toggler {
+        color: #ffffff;
+    }
+    
+    .header .navbar-toggler:focus {
+        outline: none;
+    }
+    
+    .header .brand {
+        text-align: center;
+    }
+    
+    .header .topbar {
+        text-align: center;
+    }
+}
+
+
+.header .navbar .btn {
+    position: relative;
+    margin-left: 15px;
+    padding: 12px 20px 10px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #00539C;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: .3s;
+}
+
+.header .navbar .btn:hover {
+    color: #000000;
     background: #ef6603;
 }
 
-.navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 5px;
-    top: calc(100% + 30px);
-    margin: 5px 0 0 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-    border-radius: 15px;
+.header .navbar .btn i {
+    font-size: 16px;
+    margin-right: 8px;
 }
 
-.navbar .dropdown ul li {
-    min-width: 200px;
+@media (max-width: 992px) {
+    .header .navbar {
+        border-radius: 5px;
+    }
+    
+    .header .navbar .btn {
+        display: none;
+    }
 }
 
-.navbar .dropdown ul a {
-    padding: 10px 20px;
-    color: #2a2c39;
-    margin: 0 5px;
-    font-size: 14px;
+.header .hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.navbar .dropdown ul a i {
-    font-size: 12px;
+.header .hero h2 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+    color: #ffffff;
 }
 
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-    color: #fff;
+.header .hero h2 span {
+    color: #ef6603;
 }
 
-.navbar .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
+.header .hero p {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+    color: #ffffff;
 }
 
-.navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
+.header .hero a.btn {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ef6603;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: .3s;
 }
+
+.header .hero a.btn:hover {
+    color: #000000;
+    background: #ef6603;
+}
+
+.header .hero .form {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .3);
+    border-radius: 5px;
+}
+
+.header .hero .form h3 {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.header .hero .form input,
+.header .hero .form select,
+.header .hero .form textarea {
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .2);
+}
+
+.header .hero .form textarea {
+    height: 75px;
+}
+
+.header .hero .form select,
+.header .hero .form input::placeholder,
+.header .hero .form textarea::placeholder {
+    color: #ffffff;
+}
+
+.header .hero .form select option:not(:checked) {
+    color: #666666;
+}
+
+.header .hero .form .btn {
+    position: relative;
+    padding: 10px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    background: #ef6603;
+    transition: .3s;
+}
+
+.header .hero .form .btn:hover {
+    color: #00539C;
+    background: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+    .header .hero .form {
+        margin-top: 45px;
+    }
+}
+
+.header .brand img {
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+.brand img {
+    border: 0;
+}
+.brand img {
+    vertical-align: middle;
+    border-style: none;
+}
+

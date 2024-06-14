@@ -1,59 +1,37 @@
-.container {
-    margin: 60px;
-}
-
-.container-text {
-    text-align: start;
-    margin-left: 53px;
+.about::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #fd9042;
+    margin: 4px 10px;
 }
 
 .about {
-    color: rgb(154, 152, 152);
-    letter-spacing: 2px;
-    font-family: sans-serif;
+    color: black;
 }
 
-.about-text {
-    text-align: center;
+.who-we-are {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2a2c39;
 }
 
-h1 {
-    font-family: sans-serif;
-    font-size: 32px;
-}
-
-h2 {
+.container h2 {
     font-family: sans-serif;
     color: black;
-    font-size: 37px;
+    font-size: 40px;
 }
 
-p {
-    color: rgb(154, 152, 152);
-    letter-spacing: 2px;
-    font-family: sans-serif;
+.container p {
+    color: black;
+    font-size: 22px;
+    margin-top: 30px;
 }
 
-.body-about {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: space-between;
-    margin-bottom: 100px;
-}
-
-.body-image {
-    height: 350px;
-    width: 350px;
-    padding: 30px;
-    margin-left: 22px;
-}
-
-.body-text {
-    margin-top: 22px;
-}
-
-.btn {
+.btn-outline-warning {
     border: 2px solid #be8318;
     border-radius: 5px;
     padding: 4px;
@@ -63,11 +41,48 @@ p {
     height: 57px;
     width: 200px;
     letter-spacing: 2px;
-    font-weight: bold
+    font-weight: bold;
 }
 
-.btn:hover {
+.btn-outline-warning:hover {
     background-color: #e09305;
     color: white;
     font-weight: bold;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .who-we-are {
+        font-size: 24px;
+    }
+
+    .container-text h2 {
+        font-size: 22px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .btn-outline-warning {
+        height: 50px;
+        width: 180px;
+        font-size: 14px;
+    }
 }
