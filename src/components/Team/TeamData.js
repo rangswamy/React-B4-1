@@ -44,3 +44,4 @@ export const teamData = [
         designation: 'Trainer'
     },
 ];
+

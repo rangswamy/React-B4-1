@@ -3,7 +3,7 @@
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #fd9042;
+    background: #ef6603;
     margin: 4px 10px;
 }
 
@@ -20,23 +20,31 @@
 }
 
 .container h2 {
-    font-family: sans-serif;
-    color: black;
-    font-size: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
 }
 
-.container p {
+.description p{
     color: black;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .btn-outline-warning {
-    border: 2px solid #be8318;
+    border: 2px solid #ef6603;
     border-radius: 5px;
     padding: 4px;
     margin: 4px;
-    color: #d99416;
+    color: #ef6603;
     background-color: white;
     height: 57px;
     width: 200px;
@@ -45,7 +53,7 @@
 }
 
 .btn-outline-warning:hover {
-    background-color: #e09305;
+    background-color: #ef6603;
     color: white;
     font-weight: bold;
 }
@@ -65,7 +73,8 @@
 
 @media (max-width: 576px) {
     .who-we-are {
-        font-size: 24px;
+        font-size: 36px;
+        font-weight: 700;
     }
 
     .container-text h2 {
@@ -76,13 +85,10 @@
         font-size: 24px;
     }
 
-    .container p {
-        font-size: 14px;
-    }
-
     .btn-outline-warning {
         height: 50px;
         width: 180px;
         font-size: 14px;
     }
 }
+

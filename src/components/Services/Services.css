@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:ital,wght@0,600;1,600&display=swap');
 
-
-.container{
-    margin-top: 50px;
+:root {
+    --heading-font: "Poppins", sans-serif;
+    --title-font: "Raleway", sans-serif;
+    --desc-font: "Open Sans", sans-serif;
 }
-.section {
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#services {
     padding: 60px 0;
 }
 
-.section-title h2 {
+.services-header .services-title {
     font-size: 14px;
-    margin-bottom: 20px;
     font-weight: 500;
     padding: 0;
     line-height: 1px;
@@ -21,7 +30,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
+.services-header .services-title::after {
     content: "";
     width: 120px;
     height: 1px;
@@ -30,8 +39,8 @@
     margin: 4px 10px;
 }
 
-.section-title p {
-    margin-top: 20px;
+.services-header .services-subtitle {
+    margin: 0;
     padding-bottom: 40px;
     font-size: 36px;
     font-weight: 700;
@@ -53,7 +62,7 @@
     height: auto;
 }
 
-.service-info h3 {
+.service-info .course-title {
     margin: 0;
     padding: 25px 15px 15px 15px;
     font-size: 18px;
@@ -62,7 +71,7 @@
     font-family: "Raleway", sans-serif;
 }
 
-.service-info p {
+.service-info .course-desc {
     margin: 0;
     padding: 0 25px 25px 15px;
     font-size: 14px;
@@ -70,12 +79,16 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.learn-more a {
+a.btn-learn {
+    width: 115px;
+    height: 41px;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     margin: 0 0 30px 15px;
     text-decoration: none;
-    padding: 11px 20px;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     color: white;
     border: none;
@@ -85,7 +98,7 @@
     transition: .3s;
 }
 
-.learn-more a:hover {
+a.btn-learn:hover {
     background-color: #d8742c;
     color: white;
 }

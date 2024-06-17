@@ -8,7 +8,6 @@ import FrequentlyAskedQuestions from "./components/FAQ/FrequentlyAskedQuestions"
 import Team from "./components/Team/Team";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
-// import Card from "./components/Card/Cards";
 import './App.css';
 
 function App() {

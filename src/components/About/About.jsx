@@ -14,8 +14,8 @@ const About = () => {
                 <div className="col-md-6 mb-4 mb-md-0">
                     <img src={training} alt="Training session" className="img-fluid about-img" />
                 </div>
-                <div className='col-md-6'>
-                    <h2><font size='24'>A</font>n Year Experience</h2>
+                <div className='description col-md-6'>
+                    <h3><font size='24'>A</font>n Year Experience</h3>
                     <p>We Started in 2021 December with just 8 students for a batch of Java training.</p>
                     <p>We started the training for DevOps as the next stream and followed by SAP, React and planning to extend the training to Quality Assurance, Data engineering, Data analytics and HR profiles.</p>
                     <button className='btn btn-outline-warning'>LEARN MORE</button>
@@ -26,3 +26,4 @@ const About = () => {
 }
 
 export default About;
+
