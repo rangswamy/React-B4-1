@@ -1,14 +1,46 @@
+#faq {
+    padding: 60px 0;
+}
+
 .faq-list {
     margin-bottom: 16px;
     padding: 0;
 }
 
-.faq-list li {
-    list-style: none;
-}
 
 .question {
     display: flex;
+}
+
+.faq-header .faq-title {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.faq-header .faq-title::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #fd9042;
+    margin: 4px 10px;
+}
+
+.faq-header .faq-subtitle {
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #2a2c39;
 }
 
 .faq .faq-list .accordion {
@@ -19,6 +51,7 @@
 
 .accordion {
     cursor: pointer;
+    list-style: none;
 }
 
 .collapsible-title {
@@ -45,4 +78,28 @@
 .collapsible-text.show {
     height: auto;
     max-height: 100px;
+}
+
+a.ask-more-btn {
+    width: 110px;
+    height: 45px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #fd9042;
+    font-family: "Raleway", sans-serif;
+    transition: .3s;
+}
+
+a.ask-more-btn:hover {
+    background-color: #d8742c;
+    color: white;
 }

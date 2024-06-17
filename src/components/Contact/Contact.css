@@ -1,12 +1,11 @@
-
-.section {
+section {
   padding: 60px 0;
   overflow: hidden;
 }
-.section-title {
+.sectiontitle {
   padding-bottom: 40px;
 }
-.section-title h2 {
+.sectiontitle .contact-title {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -17,7 +16,7 @@
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
-.section-title h2::after {
+.sectiontitle h2::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -25,7 +24,7 @@
   background: #fd9042;
   margin: 4px 10px;
 }
-.section-title p {
+.sectiontitle .contact-us {
   margin: 0;
   margin: 0;
   font-size: 36px;
@@ -51,18 +50,19 @@
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
-.contact .info h4 {
+.contact .info .infodetails {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #2a2c39;
 }
-.contact .info p {
+.contact .info .infoaddress {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
   color: #555974;
+  margin-top: 0px;
 }
 .contact .info .email,
 .contact .info .phone {
@@ -93,6 +93,9 @@
 .contact .form-details textarea {
   padding: 10px 12px;
 }
+textarea{
+  height: 126px;
+}
 .contact .form-details button {
   background: #ef6603;
   border: 0;
@@ -117,10 +120,15 @@
   background-clip: padding-box;
   border: 1px solid #dee2e6;
 }
-.error {
+.contact .form-details .error {
   color: #ed3c0d;
-  ;
-}
-.message {
+  text-align: left;
+  font-weight: 600px;
+  font-size: medium;
+  margin-top: 0px;
+}  
+.contact .form-details .message {
   color: #18d26e;
+  text-align: center;
+  font-weight: 600px;
 }
