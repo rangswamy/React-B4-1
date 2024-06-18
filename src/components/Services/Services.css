@@ -14,11 +14,11 @@
     box-sizing: border-box;
 }
 
-section {
+#services {
     padding: 60px 0;
 }
 
-.section-title h2 {
+.services-header .services-title {
     font-size: 14px;
     font-weight: 500;
     padding: 0;
@@ -30,7 +30,7 @@ section {
     font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
+.services-header .services-title::after {
     content: "";
     width: 120px;
     height: 1px;
@@ -39,7 +39,7 @@ section {
     margin: 4px 10px;
 }
 
-.section-title p {
+.services-header .services-subtitle {
     margin: 0;
     padding-bottom: 40px;
     font-size: 36px;
@@ -62,7 +62,7 @@ section {
     height: auto;
 }
 
-.service-info h3 {
+.service-info .course-title {
     margin: 0;
     padding: 25px 15px 15px 15px;
     font-size: 18px;
@@ -71,7 +71,7 @@ section {
     font-family: "Raleway", sans-serif;
 }
 
-.service-info p {
+.service-info .course-desc {
     margin: 0;
     padding: 0 25px 25px 15px;
     font-size: 14px;
@@ -79,12 +79,16 @@ section {
     font-family: "Open Sans", sans-serif;
 }
 
-.learn-more a {
+a.btn-learn {
+    width: 115px;
+    height: 41px;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     margin: 0 0 30px 15px;
     text-decoration: none;
-    padding: 11px 20px;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     color: white;
     border: none;
@@ -94,7 +98,7 @@ section {
     transition: .3s;
 }
 
-.learn-more a:hover {
+a.btn-learn:hover {
     background-color: #d8742c;
     color: white;
 }

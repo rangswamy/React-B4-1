@@ -7,23 +7,21 @@ const Services = () => {
     return (
         <section id='services' className='services'>
             <div className="container">
-                <div className="section-title">
-                    <h2>Services</h2>
-                    <p>IT Training</p>
+                <div className="services-header">
+                    <h2 className="services-title">Services</h2>
+                    <p className="services-subtitle">IT Training</p>
                 </div>
                 <div className="row">
                     { servicesData.map((data)=> { 
                         return (
-                            <div className='col-lg-3 col-md-6' key={data.id}>
+                            <div className="col-lg-3 col-md-6" key={data.id}>
                                 <div className="service-item">
                                     <img src={data.image} alt="pictures" className='sevice-img' />
                                     <div className="service-info">
-                                        <h3>{data.course}</h3>
-                                        <p>{data.description}</p>
+                                        <h3 className="course-title">{data.course}</h3>
+                                        <p className="course-desc">{data.description}</p>
                                     </div>
-                                    <div className="learn-more">
-                                        <a href="/" className='btn'>Learn More</a>
-                                    </div>
+                                        <a href="/" className="btn-learn">Learn More</a>
                                 </div>
                             </div>
                         )

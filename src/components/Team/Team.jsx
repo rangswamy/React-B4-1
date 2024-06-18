@@ -1,29 +1,26 @@
 import React from 'react';
-import {teamData} from './TeamData';
-import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { teamData } from './TeamData';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Team.css';
 
 function Team() {
     return (
-        <section className="team">
+        <section id='team' className='team'>
             <div className="container">
-                <div className="section-title">
-                    <h2 className='hr-lines'>TEAM</h2>
+                <div className="team-title">
+                    <h2>TEAM</h2>
                     <p>OUR HARDWORKING TEAM</p>
-                    {teamData.map((val) => {
+                </div>
+                <div className="row">
+                    {teamData.map((data) => {
                         return (
-                            <div className='card-container'>
-                                <div className='card'>
-                                    <img className='card-img' src={val.image} alt="pictures" />
-                                    <div className='social-links'>
-                                        <a href="/#" ><FaTwitter /></a>
-                                        <a href="/#" ><FaFacebookF /></a>
-                                        <a href="/#"><FaYoutube /></a>
-                                        <a href="/#"><FaInstagram /></a>
-                                        <a href="/#"><FaLinkedinIn /></a>
+                            <div className='col-lg-3 col-md-4 col-sm-6 col-12 mb-4' key={data.id}>
+                                <div className="team-item">
+                                    <img src={data.image} alt={data.name} className='team-img image-fluid' />
+                                    <div className="team-info">
+                                        <h3>{data.name}</h3>
+                                        <p>{data.designation}</p>
                                     </div>
-                                    <h2 className='card-title'> {val.name}</h2>
-                                    <h4>{val.designation}</h4>
                                 </div>
                             </div>
                         )
@@ -35,3 +32,4 @@ function Team() {
 }
 
 export default Team;
+
