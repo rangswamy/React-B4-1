@@ -1,21 +1,21 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FAQ from "./components/Accordion/FAQ";
-import Footer from "./components/Footer/Footer";
-import Team from "./components/Team/Team";
-import LoginSignup from "./components/LoginSignup/LoginSignup";
+import Header from "./components/Header/Header";
 import Services from "./components/Services/Services"
-import FrequentlyAskedQuestions from "./components/FAQ/FrequentlyAskedQuestions"
+import Contact from "./components/Contact/Contact";
+import { Portfolio } from "./components/Portfolio/Portfolio";
+import FrequentlyAskedQuestions from "./components/FAQ/FrequentlyAskedQuestions";
+import Team from "./components/Team/Team";
+import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
 import './App.css';
-
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<><LoginSignup /></>} />
-          <Route path='/team' element={<><Services /><FrequentlyAskedQuestions /><FAQ /><Team /><Footer /></>} />
+          <Route path='/' element={<><Header /><Contact /><Services /><Portfolio /><FrequentlyAskedQuestions /><About /><Team /><Footer /></>} />
         </Routes>
       </BrowserRouter>
     </div>
