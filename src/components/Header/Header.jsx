@@ -44,7 +44,7 @@ const Header = () => {
                                 <div className="navbar-nav ml-auto style={{ justifyContent: 'flex-end' }}">
                                     <a href="index.html" className="nav-item nav-link">Home</a>
                                     <a href="about.html" className="nav-item nav-link">About</a>
-                                    <a href="service.html" className="nav-item nav-link">Service</a>
+                                    <a href="#services" className="nav-item nav-link">Service</a>
                                     <a href="story.html" className="nav-item nav-link">Story</a>
                                     <a href="contact.html" className="nav-item nav-link">Contact</a>
                                 </div>

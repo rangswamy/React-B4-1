@@ -15,11 +15,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-<<<<<<< HEAD
           <Route path='/' element={<><Header /><Contact /><Services /><Portfolio /><FrequentlyAskedQuestions /><About /><Team /><Footer /></>} />
-=======
-          <Route path='/' element={<><Header/><Contact/><Services/><Portfolio/><FrequentlyAskedQuestions/><About/><Team /><Footer /></>} />
->>>>>>> 1548f3544a29a8772510183d04b545720016ac71
         </Routes>
       </BrowserRouter>
     </div>

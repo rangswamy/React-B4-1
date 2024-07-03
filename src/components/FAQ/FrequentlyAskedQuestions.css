@@ -7,7 +7,6 @@
     padding: 0;
 }
 
-
 .question {
     display: flex;
 }
@@ -65,19 +64,24 @@
 }
 
 .collapsible-title:hover {
-    color: #fd9042;
+    color: #ef6603;
 }
 
 .collapsible-text {
-    max-height: 0;
+    max-height: 100px;
+    display: none;
     overflow: hidden;
     padding: 10px 0 0 25px;
-    transition: max-height .5s linear;
+    transition: all 1s linear;
 }
 
-.collapsible-text.show {
-    height: auto;
-    max-height: 100px;
+.question:hover~.collapsible-text {
+    display: block;
+}
+
+.question:hover .arrow-icon {
+    color: #ef6603;
+    transform: rotate(180deg);
 }
 
 a.ask-more-btn {
@@ -94,12 +98,12 @@ a.ask-more-btn {
     color: white;
     border: none;
     border-radius: 5px;
-    background-color: #fd9042;
+    background-color: #ef6603;
     font-family: "Raleway", sans-serif;
     transition: .3s;
 }
 
 a.ask-more-btn:hover {
-    background-color: #d8742c;
+    background-color: #fc8129;
     color: white;
 }
